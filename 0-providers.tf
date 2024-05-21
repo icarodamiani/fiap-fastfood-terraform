@@ -2,7 +2,7 @@ terraform {
 
   cloud {
     workspaces {
-      name = "fiap-fastfood"
+      name = "fiap-fastfood-86"
     }
   }
 

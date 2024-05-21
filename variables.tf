@@ -10,9 +10,14 @@ variable "aws_region" {
   default = "us-east-1"
 }
 
+variable "oidc_thumbprint_list" {
+  type    = list(any)
+  default = []
+}
+
 variable "cognito_domain" {
   type    = string
-  default = "fastfood-g86"
+  default = "fastfood-t4-g86"
 }
 
 variable "manage_default_network_acl" {
@@ -22,7 +27,7 @@ variable "manage_default_network_acl" {
 }
 
 variable "cluster_name" {
-  default = "fiap-fastfood-g86"
+  default = "fiap-fastfood-t4-g86"
 }
 
 variable "cluster_version" {
