@@ -16,6 +16,8 @@ resource "aws_cognito_user_pool" "fiap-g86-user-pool" {
     allow_admin_create_user_only = false
   }
 
+  auto_verified_attributes = ["email"]
+
   verification_message_template {
     default_email_option = "CONFIRM_WITH_CODE"
     email_subject        = "Account Confirmation"
